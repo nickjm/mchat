@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('send_message') }}" method="post" class="send-message">
+      <dl>
+        <dt>Recipient:
+        <dd><input type="text" size="30" name="recipient">
+        <dt>Body:
+        <dd><textarea name="body" rows="5" cols="40"></textarea>
+        <dd><input type="submit" value="Send">
+      </dl>
+    </form>
+  {% endif %}
+  <ul class="messages">
+  {% for message in messages %}
+    <li>{{ message.sender }} to {{ message.recipient }} as {{ message.media }} - {{ message.body }}</li>
+  {% else %}
+    <li><em>Unbelievable.  No messages here so far</em></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
