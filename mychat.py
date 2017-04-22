@@ -1,5 +1,5 @@
 """
-    mychat built for ASAPP backend challenge
+    mchat
 
     authored by Nicholas Matthews
 

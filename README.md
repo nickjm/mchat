@@ -1,11 +1,10 @@
-# ASAPP Backend Challenge
+# mchat
 
-##### solution by Nick Matthews
+##### author: nickjm
 
 ## Description
 
-Simple chat app built for ASAPP backend challenge. Supports account creation,
-user login, sending messages, and fetching messages.
+Supports account creation, user login, sending messages, and fetching messages.
 
 ## Setup
 
@@ -31,14 +30,6 @@ steps to get started:
 5. Send a message to "nick" via the home page
 6. See that the messages appear in a below the new message area.
 
-## Notes
-
-Pagination is supported by the query convenience methods, but not surfaced on
-the frontend. I also used a quick and dirty solution for the storing of
-message type and metadata. I think if I were building something more permanent
-I would have fields for height, width, duration and source; probably an ENUM
-column for the type too, as I would be using a more capable database than
-sqlite3
 
 ## Acknowledgments
 
